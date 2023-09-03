@@ -482,10 +482,8 @@ button.slick-next:before {
 }
 
 @media(max-width: 1024px) {
-
-  .containerAll {
-    flex-direction: column;
-    gap: 1em;
+  .contatos.bold {
+    font-size: 14px;
   }
 
   #product-list {
