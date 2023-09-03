@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Camisa Furia",
+    "price": 99999.99,
+    "prevPrice": 99999.99,
+    "installment": "Em até 3x sem juros no cartao",
+    "image": "./assets/img/product/camisaFuria.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Blusa Furia",
+    "price": 99999.99,
+    "prevPrice": 99999.99,
+    "installment": "Em até 3x sem juros no cartao",
+    "image": "./assets/img/product/blusaFuria.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Camisa Furia Azul",
+    "price": 99999.99,
+    "prevPrice": 99999.99,
+    "installment": "Em até 3x sem juros no cartao",
+    "image": "./assets/img/product/camisaFuria.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Blusa Furia",
+    "price": 99999.99,
+    "prevPrice": 99999.99,
+    "installment": "Em até 3x sem juros no cartao",
+    "image": "./assets/img/product/blusaFuria.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Camisa Gato Furia",
+    "price": 99999.99,
+    "prevPrice": 99999.99,
+    "installment": "Em até 3x sem juros no cartao",
+    "image": "./assets/img/product/camisetaGatoFuria.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Camisa Furia",
+    "price": 99999.99,
+    "prevPrice": 99999.99,
+    "installment": "Em até 3x sem juros no cartao",
+    "image": "./assets/img/product/camisaFuria2.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Calça Furia",
+    "price": 99999.99,
+    "prevPrice": 99999.99,
+    "installment": "Em até 3x sem juros no cartao",
+    "image": "./assets/img/product/calcaFuria.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Bone Furia",
+    "price": 99999.99,
+    "prevPrice": 99999.99,
+    "installment": "Em até 3x sem juros no cartao",
+    "image": "./assets/img/product/boneFuria.jpg"
+  }
+]

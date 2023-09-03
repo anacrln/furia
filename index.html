@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@600;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" ; crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <title>Home - FURIA</title>
+</head>
+
+<body>
+  <header class="desk">
+    <div class="cont1">
+      <a href="#">
+        <img src="./assets/img/logos/LOGO.png" alt="" class="logo">
+      </a>
+      <a href="" class="link">SHOP ALL</a>
+      <a href="" class="link">SHOP All</a>
+    </div>
+    <div class="cont2">
+      <div class="search">
+        <input id="searchbar" type="text" placeholder="Buscar">
+        <img src="./assets/img/icons/search.svg" alt="">
+      </div>
+      <div class="actions">
+        <img src="./assets/img/icons/favorite.svg" alt="">
+        <img src="./assets/img/icons/user.svg" alt="">
+        <img src="./assets/img/icons/minicart.svg" alt="">
+      </div>
+      <div class="langBox">
+        <img src="./assets/img/icons/language.svg" alt="">
+        <p>Português, BR</p>
+        <img src="./assets/img/icons/arrowRight.svg" alt="">
+      </div>
+    </div>
+  </header>
+  <header class="mob">
+    <div class="blur"></div>
+    <nav class="iconNav">
+      <div id="mobile-menu-icon" class="closed" onclick="togglemenu()">
+        <div class="first-line"></div>
+        <div class="second-line"></div>
+        <div class="third-line"></div>
+      </div>
+      <div class="logoContainer">
+        <img src="./assets/img/logos/logoMobile.png" alt="">
+      </div>
+      <div class="cart">
+        <img src="./assets/img/icons/minicart.svg" alt="" width="26" height="26">
+      </div>
+    </nav>
+    <div class="searchBox">
+      <input type="text" placeholder="Buscar">
+      <img src="./assets/img/icons/search.svg" alt="">
+    </div>
+    <div id="mobile-menu" class="closed">
+      <div class="logoContainer">
+        <img src="./assets/img/logos/logoMobile.png" alt="">
+        <div id="mobile-menu-icon" class="open" onclick="togglemenu()">
+          <div class="first-line"></div>
+          <div class="second-line"></div>
+          <div class="third-line"></div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href=""><img src="./assets/img/icons/user.svg" alt="">Minha conta/Cadastrar</a>
+          </li>
+          <li>
+            <a href=""><img src="./assets/img/icons/orders.svg" alt="">Meus pedidos</a>
+          </li>
+          <li>
+            <a href=""><img src="./assets/img/icons/favorite.svg" alt="">Favoritos</a>
+          </li>
+        </ul>
+        <div class="shopAll">
+          <a href="">SHOP ALL</a>
+        </div>
+        <div class="shopAll">
+          <a href="">SHOP ALL</a>
+        </div>
+        <div class="langBox">
+          <img src="./assets/img/icons/language.svg" alt="">
+          <p>Português, BR</p>
+          <img src="./assets/img/icons/arrowRight.svg" alt="">
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="bannerDesk desk">
+      <a href="">
+        <img src="./assets/img/banners/BannerHERO.jpg" alt="">
+      </a>
+    </div>
+    <div class="bannerMob mob">
+      <img src="./assets/img/banners/bannerMob.jpg" alt="">
+    </div>
+    <div class="sponsors">
+      <div class="containerSpons">
+        <div class="">
+          <img src="./assets/img/logos/Rivalry.png" alt="" width="90" height="27">
+        </div>
+        <div class="">
+          <img src="./assets/img/logos/AOC.png" alt="" width="58" height="19">
+        </div>
+        <div class="">
+          <img src="./assets/img/logos/HyperX.png" alt="" width="90" height="27">
+        </div>
+        <div class="">
+          <img src="./assets/img/logos/gamerscard.png" alt="" width="100" height="23">
+        </div>
+        <div class="">
+          <img src="./assets/img/logos/clearBrasil.png" alt="" width="64" height="27">
+        </div>
+        <div class="">
+          <img src="./assets/img/logos/legion.png" alt="" width="75" height="25">
+        </div>
+      </div>
+    </div>
+    <section class="lancamentos">
+      <div class="containerText">
+        <h1 class="sectionTitle">LANÇAMENTOS</h1>
+        <a class="seeAll sectionTitle" href="">
+          VER TUDO
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3112_599)">
+              <path d="M6.75 3.375L12.375 9L6.75 14.625" fill="#0D0D0D" />
+            </g>
+            <defs>
+              <clipPath id="clip0_3112_599">
+                <rect width="18" height="18" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      <div class="product-list">
+        <div class="spot-container">
+          <div class="product">
+            <div class="imgCont">
+              <img class="prodImg" src="./assets/img/product/camisaFuria2.jpg" alt="Camisa Furia">
+              <div class="sizes">
+                <div class="sizesCont">
+                  <div class="sFlex">
+                    <div class="size">PP</div>
+                    <div class="size">P</div>
+                    <div class="size">M</div>
+                    <div class="size">G</div>
+                    <div class="size">GG</div>
+                    <div class="size">XGG</div>
+                  </div>
+                  <div class="btnCont">
+                    <button>COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="prodName">Camisa Furia</h2>
+            <div class="prices">
+              <p class="precoPor">R$ 9.999,99</p>
+              <p class="precoDe">R$ 99.999,99</p>
+            </div>
+            <p class="installment">Em até 3x sem juros no cartão</p>
+          </div>
+        </div>
+        <div class="spot-container">
+          <div class="product">
+            <div class="imgCont">
+              <img class="prodImg" src="./assets/img/product/blusaFuria.jpg" alt="Blusa Furia">
+              <div class="sizes">
+                <div class="sizesCont">
+                  <div class="sFlex">
+                    <div class="size">PP</div>
+                    <div class="size">P</div>
+                    <div class="size">M</div>
+                    <div class="size">G</div>
+                    <div class="size">GG</div>
+                    <div class="size">XGG</div>
+                  </div>
+                  <div class="btnCont">
+                    <button>COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="prodName">Blusa Furia</h2>
+            <div class="prices">
+              <p class="precoPor">R$ 9.999,99</p>
+              <p class="precoDe">R$ 99.999,99</p>
+            </div>
+            <p class="installment">Em até 3x sem juros no cartão</p>
+          </div>
+        </div>
+        <div class="spot-container">
+          <div class="product">
+            <div class="imgCont">
+              <img class="prodImg" src="./assets/img/product/camisaFuria.jpg" alt="Camisa Furia Azul">
+              <div class="sizes">
+                <div class="sizesCont">
+                  <div class="sFlex">
+                    <div class="size">PP</div>
+                    <div class="size">P</div>
+                    <div class="size">M</div>
+                    <div class="size">G</div>
+                    <div class="size">GG</div>
+                    <div class="size">XGG</div>
+                  </div>
+                  <div class="btnCont">
+                    <button>COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="prodName">Camisa Furia Azul</h2>
+            <div class="prices">
+              <p class="precoPor">R$ 9.999,99</p>
+              <p class="precoDe">R$ 99.999,99</p>
+            </div>
+            <p class="installment">Em até 3x sem juros no cartão</p>
+          </div>
+        </div>
+        <div class="spot-container">
+          <div class="product">
+            <div class="imgCont">
+              <img class="prodImg" src="./assets/img/product/blusaFuria.jpg" alt="Blusa Furia">
+              <div class="sizes">
+                <div class="sizesCont">
+                  <div class="sFlex">
+                    <div class="size">PP</div>
+                    <div class="size">P</div>
+                    <div class="size">M</div>
+                    <div class="size">G</div>
+                    <div class="size">GG</div>
+                    <div class="size">XGG</div>
+                  </div>
+                  <div class="btnCont">
+                    <button>COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="prodName">Blusa Furia</h2>
+            <div class="prices">
+              <p class="precoPor">R$ 9.999,99</p>
+              <p class="precoDe">R$ 99.999,99</p>
+            </div>
+            <p class="installment">Em até 3x sem juros no cartão</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="youtube">
+      <h3 class="sectionTitle">YOUTUBE</h3>
+      <iframe width="888.89" height="500" src="https://www.youtube.com/embed/-_1KSc48rxg?si=3MciayK120CcfMNE"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </section>
+    <section class="novidades">
+      <div class="containerText">
+        <h1 class="sectionTitle">NOVIDADES</h1>
+        <a class="seeAll sectionTitle" href="">
+          VER TUDO
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_3112_599)">
+              <path d="M6.75 3.375L12.375 9L6.75 14.625" fill="#BBBBBB" />
+            </g>
+            <defs>
+              <clipPath id="clip0_3112_599">
+                <rect width="18" height="18" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      <div class="product-list">
+        <div class="spot-container">
+          <div class="product">
+            <div class="imgCont">
+              <img class="prodImg" src="./assets/img/product/camisaFuria2.jpg" alt="Camisa Furia">
+              <div class="sizes">
+                <div class="sizesCont">
+                  <div class="sFlex">
+                    <div class="size">PP</div>
+                    <div class="size">P</div>
+                    <div class="size">M</div>
+                    <div class="size">G</div>
+                    <div class="size">GG</div>
+                    <div class="size">XGG</div>
+                  </div>
+                  <div class="btnCont">
+                    <button>COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="prodName">Camisa Furia</h2>
+            <div class="prices">
+              <p class="precoPor">R$ 9.999,99</p>
+              <p class="precoDe">R$ 99.999,99</p>
+            </div>
+            <p class="installment">Em até 3x sem juros no cartão</p>
+          </div>
+        </div>
+        <div class="spot-container">
+          <div class="product">
+            <div class="imgCont">
+              <img class="prodImg" src="./assets/img/product/blusaFuria.jpg" alt="Blusa Furia">
+              <div class="sizes">
+                <div class="sizesCont">
+                  <div class="sFlex">
+                    <div class="size">PP</div>
+                    <div class="size">P</div>
+                    <div class="size">M</div>
+                    <div class="size">G</div>
+                    <div class="size">GG</div>
+                    <div class="size">XGG</div>
+                  </div>
+                  <div class="btnCont">
+                    <button>COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="prodName">Blusa Furia</h2>
+            <div class="prices">
+              <p class="precoPor">R$ 9.999,99</p>
+              <p class="precoDe">R$ 99.999,99</p>
+            </div>
+            <p class="installment">Em até 3x sem juros no cartão</p>
+          </div>
+        </div>
+        <div class="spot-container">
+          <div class="product">
+            <div class="imgCont">
+              <img class="prodImg" src="./assets/img/product/camisaFuria.jpg" alt="Camisa Furia Azul">
+              <div class="sizes">
+                <div class="sizesCont">
+                  <div class="sFlex">
+                    <div class="size">PP</div>
+                    <div class="size">P</div>
+                    <div class="size">M</div>
+                    <div class="size">G</div>
+                    <div class="size">GG</div>
+                    <div class="size">XGG</div>
+                  </div>
+                  <div class="btnCont">
+                    <button>COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="prodName">Camisa Furia Azul</h2>
+            <div class="prices">
+              <p class="precoPor">R$ 9.999,99</p>
+              <p class="precoDe">R$ 99.999,99</p>
+            </div>
+            <p class="installment">Em até 3x sem juros no cartão</p>
+          </div>
+        </div>
+        <div class="spot-container">
+          <div class="product">
+            <div class="imgCont">
+              <img class="prodImg" src="./assets/img/product/blusaFuria.jpg" alt="Blusa Furia">
+              <div class="sizes">
+                <div class="sizesCont">
+                  <div class="sFlex">
+                    <div class="size">PP</div>
+                    <div class="size">P</div>
+                    <div class="size">M</div>
+                    <div class="size">G</div>
+                    <div class="size">GG</div>
+                    <div class="size">XGG</div>
+                  </div>
+                  <div class="btnCont">
+                    <button>COMPRAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="prodName">Blusa Furia</h2>
+            <div class="prices">
+              <p class="precoPor">R$ 9.999,99</p>
+              <p class="precoDe">R$ 99.999,99</p>
+            </div>
+            <p class="installment">Em até 3x sem juros no cartão</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="newsletter">
+      <div class="containerAll">
+        <div class="containerNewsletter">
+          <div class="textContainer">
+            <h5 class="title">ASSINE NOSSA NEWSLETTER!</h5>
+            <p class="subtitle">Receba descontos e novidades da furia por e-mail</p>
+          </div>
+          <div class="formContainer">
+            <form action="" method="post">
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+              <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+              <button id="submitForm" type="submit"
+                onclick="alert('Em breve você receberá as novidades da furia')">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="socialMedia">
+          <div class="containerLogos">
+            <a target="_blank" href="https://www.facebook.com/furiagg">
+              <img src="./assets/img/icons/facebook.svg" alt="" width="40" height="40">
+            </a>
+            <a target="_blank" href="https://www.youtube.com/furiagg">
+              <img src="./assets/img/icons/youtube.svg" alt="" width="40" height="40">
+            </a>
+            <a target="_blank" href="https://twitter.com/FURIA">
+              <img src="./assets/img/icons/logoX.svg" alt="" width="40" height="40">
+            </a>
+            <a target="_blank" href="https://www.twitch.tv/furiatv">
+              <img src="./assets/img/icons/Twitch.svg" alt="" width="40" height="40">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="navigation">
+      <div class="navCont">
+        <div class="institucional">
+          <p class="navTitle">Institucional</p>
+          <nav>
+            <ul>
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Central de atendimento</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contato">
+          <p class="navTitle">Contato</p>
+          <p class="contatos">(11) 3035-0520</p>
+          <p class="contatos">Horário de Atendimento</p>
+          <p class="contatos">De Segunda à Sexta</p>
+          <p class="contatos">das 09h às 18h</p>
+          <p class="contatos bold">atendimento@loremipsum.com</p>
+          <div class="wpp ">
+            <a href="">
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.49 6.547C22.4817 6.11797 22.4473 5.68985 22.387 5.265C22.3152 4.8871 22.1931 4.52052 22.024 4.175C21.6539 3.4443 21.0605 2.85057 20.33 2.48C19.9867 2.31171 19.6225 2.18997 19.247 2.118C18.8189 2.05648 18.3874 2.02142 17.955 2.013C17.772 2.006 17.535 2.003 17.425 2.003L7.577 2C7.467 2 7.23 2.003 7.047 2.01C6.61797 2.01827 6.18984 2.05266 5.765 2.113C5.3871 2.18484 5.02052 2.30692 4.675 2.476C3.94434 2.8462 3.35063 3.43956 2.98 4.17C2.81176 4.51332 2.69002 4.87752 2.618 5.253C2.5562 5.68109 2.5208 6.11257 2.512 6.545C2.506 6.728 2.502 6.965 2.502 7.075L2.5 16.923C2.5 17.033 2.503 17.27 2.51 17.453C2.51827 17.882 2.55266 18.3102 2.613 18.735C2.68485 19.1129 2.80693 19.4795 2.976 19.825C3.3462 20.5557 3.93956 21.1494 4.67 21.52C5.01332 21.6882 5.37753 21.81 5.753 21.882C6.1811 21.9435 6.61258 21.9786 7.045 21.987C7.228 21.994 7.465 21.997 7.575 21.997L17.423 21.999C17.533 21.999 17.77 21.996 17.953 21.989C18.382 21.9807 18.8102 21.9463 19.235 21.886C19.6129 21.8141 19.9795 21.692 20.325 21.523C21.056 21.153 21.6501 20.5596 22.021 19.829C22.1893 19.4857 22.311 19.1215 22.383 18.746C22.4448 18.3179 22.4802 17.8864 22.489 17.454C22.495 17.271 22.499 17.034 22.499 16.924L22.5 7.077C22.5 6.967 22.497 6.73 22.49 6.547ZM12.717 18.957H12.714C11.5237 18.9568 10.3523 18.6583 9.307 18.089L5.527 19.08L6.539 15.387C5.75545 14.0273 5.44237 12.4471 5.6483 10.8914C5.85423 9.33566 6.56765 7.89133 7.67797 6.78233C8.78829 5.67333 10.2335 4.96162 11.7894 4.75755C13.3454 4.55347 14.9252 4.86843 16.284 5.65359C17.6427 6.43876 18.7045 7.65026 19.3046 9.10026C19.9048 10.5503 20.0098 12.1578 19.6034 13.6735C19.197 15.1893 18.3018 16.5286 17.0568 17.4839C15.8117 18.4391 14.2863 18.9569 12.717 18.957Z"
+                  fill="#0D0C0C" />
+                <path
+                  d="M12.7197 5.90102C11.6608 5.90071 10.6212 6.1841 9.70888 6.72171C8.79659 7.25932 8.04498 8.03152 7.53223 8.95801C7.01948 9.88451 6.7643 10.9314 6.79323 11.99C6.82216 13.0485 7.13415 14.0799 7.69675 14.977L7.83775 15.201L7.23875 17.387L9.48175 16.799L9.69775 16.927C10.6108 17.4678 11.6525 17.7531 12.7137 17.753H12.7167C14.2886 17.7533 15.7961 17.1291 16.9077 16.0179C18.0193 14.9067 18.644 13.3993 18.6442 11.8275C18.6445 10.2557 18.0204 8.74819 16.9091 7.63656C15.7979 6.52494 14.2906 5.90029 12.7187 5.90002L12.7197 5.90102ZM16.2037 14.371C16.0727 14.5875 15.8982 14.7745 15.6914 14.9203C15.4845 15.066 15.2497 15.1674 15.0017 15.218C14.6274 15.2822 14.2432 15.2583 13.8797 15.148C13.535 15.0406 13.1962 14.9151 12.8647 14.772C11.6345 14.1546 10.5858 13.228 9.82175 12.083C9.40492 11.553 9.15191 10.9128 9.09375 10.241C9.08895 9.96374 9.14195 9.68849 9.24938 9.43282C9.35682 9.17715 9.51633 8.94665 9.71775 8.75602C9.77727 8.68812 9.8502 8.63325 9.93194 8.59488C10.0137 8.5565 10.1025 8.53544 10.1927 8.53302C10.3107 8.53302 10.4297 8.53302 10.5337 8.53902C10.6437 8.54402 10.7897 8.49702 10.9337 8.84502C11.0837 9.20102 11.4397 10.078 11.4837 10.167C11.512 10.2137 11.5282 10.2666 11.5308 10.3211C11.5334 10.3756 11.5224 10.4299 11.4987 10.479C11.4539 10.586 11.3939 10.686 11.3207 10.776C11.2307 10.88 11.1337 11.008 11.0537 11.088C10.9637 11.177 10.8717 11.273 10.9747 11.451C11.2423 11.9091 11.5762 12.3249 11.9657 12.685C12.3884 13.0608 12.8733 13.3599 13.3987 13.569C13.5767 13.659 13.6807 13.643 13.7847 13.524C13.8887 13.405 14.2297 13.004 14.3487 12.826C14.4677 12.648 14.5857 12.678 14.7487 12.737C14.9117 12.796 15.7887 13.227 15.9667 13.317C16.1447 13.407 16.2637 13.45 16.3077 13.524C16.3565 13.8105 16.3204 14.1049 16.2037 14.371Z"
+                  fill="#0D0C0C" />
+              </svg>
+              <p class="contatos bold">Whatsapp</p>
+            </a>
+          </div>
+        </div>
+        <div class="politicas">
+          <p class="navTitle">Políticas</p>
+          <nav>
+            <ul>
+              <li><a href="#">Prazos e entrega</a></li>
+              <li><a href="#">Formas de pagamento</a></li>
+              <li><a href="#">Promoções e Descontos</a></li>
+              <li><a href="#">Política de privacidade</a></li>
+              <li><a href="#">Trocas e devoluções</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="formasPag">
+          <p class="navTitle">Formas de Pagamento</p>
+          <img class="desk" src="./assets/img/paymentsC.jpg" alt="">
+          <img class="mob" src="./assets/img/paymentsMob.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="copyright">
+      <p class="copyText">© 2023 FURIA - 42.374.282/0001-37. Em caso de divergência de preços no site, o valor válido é
+        o do Carrinho de
+        compras.
+        Preços e condições de pagamento podem variar de acordo com a disponibilidade de produtos.</p>
+      <p class="agency">Desenvolvido por SERI.E Design</p>
+    </section>
+  </footer>
+  <div class="flutuante">
+    <img src="./assets/img/icons/roudWpp.png" alt="">
+  </div>
+
+  <script>
+
+    function togglemenu() {
+      $('#mobile-menu').toggleClass('open');
+      $('.blur').toggleClass('open');
+      $('#mobile-menu-icon').toggleClass('open');
+    }
+
+    $('.size').click(function () {
+      $(".sFlex  >div").each(function () {
+        $(this).removeClass('selected');
+      })
+      $(this).toggleClass('selected');
+      $(this).parent().addClass('selectpai');
+      tamanhoCamiseta = $('.boxTam.select').html()
+    })
+
+    $('.product-list').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+
+      ]
+    });
+    if (window.innerWidth <= 768) {
+      $('.containerSpons').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoPlay: true,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+      )
+    }
+
+  </script>
+
+</body>
+
+</html>
