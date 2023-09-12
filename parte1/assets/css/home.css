@@ -52,7 +52,15 @@ input#searchbar {
   gap: 16px;
 }
 
-.link:hover,
+.cont1 a.link {
+  border-bottom: 4px solid transparent;
+  transition: all .2s ease-in-out;
+}
+
+.cont1 a.link:hover {
+  border-color: #0D0C0C;
+}
+
 .actions img:hover,
 .langBox:hover {
   cursor: pointer;
