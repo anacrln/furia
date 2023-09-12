@@ -49,7 +49,7 @@ input#searchbar {
 }
 
 .cont1 {
-  gap: 5px;
+  gap: 16px;
 }
 
 .link:hover,
@@ -84,7 +84,7 @@ input#searchbar {
   background-color: #F5F5F5;
   border-radius: 4px;
   max-height: 36px;
-  font-weight: 300;
+  font-weight: 400;
   width: 145px;
   text-align: center;
   display: flex;
@@ -174,11 +174,16 @@ a.seeAll {
   width: 100%;
 }
 
+.product {
+  max-width: 270px;
+}
+
 .product .prodName {
   font-size: 20px;
   font-family: 'Roboto', 'sans-serif';
   text-align: left;
-  margin: 5px 0 10px;
+  padding: 14px 0;
+  margin: 0;
 }
 
 .prices {
@@ -187,7 +192,7 @@ a.seeAll {
 
 .product .prices p {
   margin: 0;
-  font-weight: 500;
+  font-weight: 700;
   font-family: 'Roboto', 'sans-serif';
 }
 
@@ -203,7 +208,7 @@ a.seeAll {
   color: #BABABA;
   font-size: 12px;
   text-align: left;
-  margin-top: 10px;
+  margin: 0;
 }
 
 .imgCont {
@@ -260,7 +265,7 @@ a.seeAll {
   border-radius: 4px;
   font-family: 'Inter', 'sans-serif';
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   cursor: pointer;
   border: none;
 }
@@ -333,6 +338,7 @@ section.newsletter form button {
 .containerLogos img {
   opacity: .24;
   cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
 .containerLogos img:hover {
@@ -359,6 +365,11 @@ section.newsletter form button {
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+button#submitForm:hover {
+  background: #484848;
 }
 
 input:focus {
@@ -769,6 +780,12 @@ button.slick-next:before {
     width: 90%;
   }
 
+  .btnCont button {
+    letter-spacing: 8px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
   .sponsors {
     max-width: 100%;
   }
@@ -875,6 +892,10 @@ button.slick-next:before {
     right: 20px;
   }
 
+  .product .prodName {
+    padding: 7px 0;
+  }
+
   section.copyright {
     flex-direction: column;
     gap: 16px;
@@ -920,6 +941,10 @@ button.slick-next:before {
     padding-bottom: 0;
   }
 
+  section.newsletter {
+    margin-top: 40px;
+  }
+
   section.newsletter h5.title {
     margin-bottom: 8px;
   }
@@ -929,7 +954,7 @@ button.slick-next:before {
   }
 
   .formasPag img {
-    width: initial;
+    width: 100%;
     margin: 0 auto;
   }
 
