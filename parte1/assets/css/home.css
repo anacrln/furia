@@ -9,6 +9,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #0D0C0C;
 }
 
 header a {
@@ -227,23 +228,48 @@ a.seeAll {
   width: 34px;
   height: 32px;
   font-family: 'Inter', 'sans-serif';
-  font-weight: 500;
+  font-weight: 600;
   color: #0D0C0C;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.size:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #0D0C0C;
+}
+
+.size.selected::before {
+  background-color: #0D0C0C;
+  content: "";
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  right: 0;
+  height: 2px;
 }
 
 .size:hover {
   opacity: .7;
 }
 
-.selectpai div {
+.selectpai a {
   opacity: .4;
 }
 
-.selectpai div.selected {
+.selectpai a.selected {
   opacity: 1;
+  border-color: #0D0C0C;
 }
 
 .sizes {
@@ -262,7 +288,8 @@ a.seeAll {
   justify-content: center;
   align-items: center;
   gap: 6px;
-  width: 92%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .btnCont button {
@@ -276,10 +303,11 @@ a.seeAll {
   letter-spacing: 4px;
   cursor: pointer;
   border: none;
+  transition: all .2s ease-in-out;
 }
 
 .btnCont button:hover {
-  opacity: .7;
+  background: #484848;
 }
 
 iframe {
@@ -476,7 +504,7 @@ p.contatos.bold:hover {
   font-size: 0;
   line-height: 0;
   position: absolute !important;
-  top: 30%;
+  top: 48%;
   display: block;
   width: 20px;
   height: 20px;
@@ -500,6 +528,14 @@ button.slick-next:before {
   display: block;
 }
 
+button.slick-prev.slick-arrow {
+  left: -30px;
+}
+
+button.slick-next.slick-arrow {
+  right: -10px;
+}
+
 @media(max-width: 1024px) {
 
   .contatos.bold {
@@ -518,12 +554,17 @@ button.slick-next:before {
     margin: 0 auto;
   }
 
+  .product {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
   .navCont {
     max-width: 90%;
   }
 
   .product-list {
-    max-width: 85%;
+    max-width: 95%;
     margin: 0 auto;
   }
 
@@ -538,11 +579,23 @@ button.slick-next:before {
   }
 
   button.slick-next.slick-arrow {
-    right: -36px;
+    right: -18px;
   }
 
   button.slick-prev.slick-arrow {
-    left: -36px;
+    left: -18px;
+  }
+
+  .flutuante {
+    right: 38px;
+  }
+
+  .sizes {
+    left: 5%;
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -783,11 +836,6 @@ button.slick-next:before {
     margin: 0 auto;
   }
 
-  .product-list {
-    max-width: 100%;
-    width: 90%;
-  }
-
   .btnCont button {
     letter-spacing: 8px;
     font-weight: 600;
@@ -839,69 +887,53 @@ button.slick-next:before {
     right: -32px;
   }
 
-  .product-list {
-    width: 80%;
-  }
-
-}
-
-@media(max-width:520px) {
-
-  .bannerDesk.desk {
-    display: none;
-  }
-
-  .sponsors {
-    height: 71px;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .containerSpons {
-    max-width: 90%;
-    display: block;
+  .product-list,
+  .btnCont button {
+    width: 90%;
     margin: 0 auto;
   }
 
-  .product-list {
-    max-width: 95%;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .product {
-    max-width: 95%;
-  }
 
   .sizes {
-    left: 2%;
+    position: absolute;
+    max-width: 100%;
   }
 
   .size {
-    font-size: 10px;
+    height: 28px;
   }
 
-  .sizes {
-    left: 7%;
-    width: 90%;
+  section.newsletter {
+    margin-top: 2em;
+  }
+
+  .containerLogos {
+    margin-top: 1em;
+  }
+
+  .socialMedia {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
+    border-top: 1px solid #E8E8E8;
+    padding-top: 32px;
   }
 
-  .btnCont {
-    width: 92%;
+  .containerLogos {
+    display: flex;
+    gap: 32px;
+    max-width: 90%;
     margin: 0 auto;
-    margin-right: 7%;
+    justify-content: center;
   }
 
-
-  .flutuante {
-    right: 20px;
+  section.navigation {
+    border: none;
+    padding: 0;
   }
 
-  .product .prodName {
-    padding: 7px 0;
+  section.newsletter {
+    border-bottom: none;
   }
 
   section.copyright {
@@ -931,7 +963,7 @@ button.slick-next:before {
 
   .navCont :is(.institucional, .contato, .politicas, .formasPag) {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .navCont .formasPag {
@@ -964,6 +996,83 @@ button.slick-next:before {
   .formasPag img {
     width: 100%;
     margin: 0 auto;
+    max-width: 320px;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media(max-width:520px) {
+
+  .bannerDesk.desk {
+    display: none;
+  }
+
+  .sponsors {
+    height: 71px;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .containerSpons {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .product-list {
+    max-width: 95%;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  p.precoDe {
+    padding-top: 3px;
+  }
+
+  .formasPag img {
+    margin-bottom: 20px;
+  }
+
+  .product {
+    max-width: 96%;
+  }
+
+  .size {
+    font-size: 10px;
+    height: 19px;
+  }
+
+
+  .sizes {
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .btnCont {
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 7%;
+  }
+
+  .btnCont button {
+    width: 90%;
+    letter-spacing: 6px;
+  }
+
+  .size.selected::before {
+    bottom: 5px;
+  }
+
+  .flutuante {
+    right: 20px;
+  }
+
+  .product .prodName {
+    padding: 7px 0;
   }
 
   .sponsors div img {
@@ -976,30 +1085,17 @@ button.slick-next:before {
   }
 
   .formContainer {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
-  .socialMedia {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    border-top: 1px solid #E8E8E8;
-    padding-top: 32px;
-  }
 
   section.newsletter,
   section.navigation,
   section.copyright {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
-  .containerLogos {
-    display: flex;
-    gap: 32px;
-    max-width: 90%;
-    margin: 0 auto;
-    justify-content: center;
-  }
+
 
   section.lancamentos,
   section.novidades,
@@ -1034,11 +1130,11 @@ button.slick-next:before {
   }
 
   button.slick-next.slick-arrow {
-    right: -12px;
+    right: -16px;
   }
 
   button.slick-prev.slick-arrow {
-    left: -17px;
+    left: -16px;
   }
 
   .sectionTitle,
@@ -1086,5 +1182,13 @@ button.slick-next:before {
 
   .bannerMob img {
     width: 100%;
+  }
+}
+
+@media(max-width:320px) {
+
+  p.precoPor,
+  .product .installment {
+    font-size: 10px;
   }
 }
